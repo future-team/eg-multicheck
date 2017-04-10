@@ -1,3 +1,35 @@
-body{
-    font-style: 12px;
+.eg-multi-select-group {
+    .title {
+        float: left;
+        padding: 2px 4px;
+        color: #989898;
+    }
+    .item-box {
+        overflow: hidden;
+        .item-list {
+            width: 103%;
+        }
+    }
 }
+.eg-label-group {
+    .eg-label {
+        border-right: initial!important;
+    }
+    .eg-label-active {
+        position: relative;
+        background: #FFF0EB;
+        border: 1px solid #FF6633!important;
+        border-radius: 4px!important;
+        color: #FF6633;
+        &:after {
+            position: absolute;
+            left: 50%;
+            margin-left: -14px;
+            content: ' ';
+            width: 0;
+            height: 0;
+            border: 14px solid transparent;//朝下的三角形
+            border-bottom-color: #ff0000;
+        }
+    }
+} 
