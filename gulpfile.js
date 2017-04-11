@@ -84,7 +84,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', function(cb) {
-    runSequence('babel', 'webpack-module', 'webpack-example', cb);
+    runSequence('babel', 'webpack-module', cb);
 });
 
 //gulp.task('default', ['babel', 'webpack-module','webpack-example']);

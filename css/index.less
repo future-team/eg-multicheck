@@ -1,4 +1,6 @@
-.eg-multi-select-group {
+.eg-multicheck-group {
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
     .title {
         float: left;
         padding: 2px 4px;
@@ -7,29 +9,77 @@
     .item-box {
         overflow: hidden;
         .item-list {
-            width: 103%;
+            width: auto;
+            .eg-input {
+                border: 1px solid transparent;
+                margin-right: 10px;
+            }
+            // 第一个改成文字的形式
+            .checkbox:first-child {
+                padding: 2px 4px;
+                .input-icon {
+                    display: none;
+                }
+                &.active {
+                    background: #FFF0EB;
+                    border: 1px solid #FF6633!important;
+                    border-radius: 4px!important;
+                    color: #FF6633;
+                }
+            }
         }
     }
 }
-.eg-label-group {
-    .eg-label {
-        border-right: initial!important;
+.eg-multicheck-wrap {
+    border-bottom: 1px solid #eeeeee;
+    .title {
+        font-weight: bold;
+        color: #333;
     }
-    .eg-label-active {
-        position: relative;
-        background: #FFF0EB;
-        border: 1px solid #FF6633!important;
-        border-radius: 4px!important;
-        color: #FF6633;
-        &:after {
-            position: absolute;
-            left: 50%;
-            margin-left: -14px;
-            content: ' ';
-            width: 0;
-            height: 0;
-            border: 14px solid transparent;//朝下的三角形
-            border-bottom-color: #ff0000;
+    .eg-label-group {
+        padding: 9px 0;
+        overflow: visible;
+        .item-list {
+            width: auto;
         }
-    }
-} 
+        .item-box {
+            overflow: visible;
+        }
+        .eg-label {
+            border-right: initial!important;
+            text-decoration: none;
+        }
+        .eg-label-active {
+            position: relative;
+            background: #FFF0EB;
+            border: 1px solid #FF6633!important;
+            border-radius: 4px!important;
+            color: #FF6633;
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                margin-left: -5px;
+                content: ' ';
+                width: 0;
+                height: 0;
+                margin-bottom: -10px;
+                border-style: solid;
+                border-color: transparent;//朝下的三角形
+                border-top-width: 6px;
+                border-bottom-width: 6px;
+                border-left-width: 5px;
+                border-right-width: 5px;
+                border-bottom-color: #F9F9F9;
+            }
+        }
+        & + .eg-multicheck-group {
+            background: #F9F9F9;
+            border-bottom: 0;
+            .title {
+                font-weight: normal;
+                color: #989898;
+            }
+        }
+    } 
+}

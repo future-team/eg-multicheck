@@ -1,7 +1,7 @@
 {
-  "name": "eg-multiselect",
+  "name": "eg-multicheck",
   "version": "0.1.0",
-  "description": "multi-select plugin for eagle-ui",
+  "description": "multi-check plugin for eagle-ui",
   "repository": {
     "type": "git",
     "url": "https://github.com/future-team/eg-multiselect.git"
@@ -11,7 +11,7 @@
     "email": "lee.genffy@gmail.com"
   },
   "keywords": [
-    "eagle-ui multi-select"
+    "eagle-ui multi-check"
   ],
   "dependencies": {
     "classnames": "^2.1.3"

@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>eagle-ui multi select</title>
+    <style type="text/css">
+        #root {
+            padding: 60px 20px;
+        }
+    </style>
 </head>
 <body>
-<div id="root" style="padding: 10px"></div>
-<script src="/dist/index.js"></script>
+    <header id="head" style="
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+"></header>
+<div id="root"></div>
+<footer id="footer" style="
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+"></footer>
+<script src="./dist/index.js"></script>
 </body>
 </html>
