@@ -4,7 +4,7 @@
   "description": "multi-check plugin for eagle-ui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/future-team/eg-multiselect.git"
+    "url": "https://github.com/future-team/eg-multicheck.git"
   },
   "author": {
     "name": "lee.genffy",
